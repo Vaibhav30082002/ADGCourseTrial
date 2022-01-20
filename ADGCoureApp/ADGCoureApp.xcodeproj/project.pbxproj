@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B80B08627989A5200687D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B08527989A5200687D19 /* AppDelegate.swift */; };
+		0B80B08827989A5200687D19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B08727989A5200687D19 /* SceneDelegate.swift */; };
+		0B80B08A27989A5200687D19 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B08927989A5200687D19 /* CourseViewController.swift */; };
+		0B80B08D27989A5200687D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B08B27989A5200687D19 /* Main.storyboard */; };
+		0B80B09027989A5200687D19 /* ADGCoureApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B08E27989A5200687D19 /* ADGCoureApp.xcdatamodeld */; };
+		0B80B09227989A5300687D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B09127989A5300687D19 /* Assets.xcassets */; };
+		0B80B09527989A5300687D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B09327989A5300687D19 /* LaunchScreen.storyboard */; };
+		0B80B0A227989AFA00687D19 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B0A027989AFA00687D19 /* CoursesTableViewCell.swift */; };
+		0B80B0A327989AFA00687D19 /* CoursesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0A127989AFA00687D19 /* CoursesTableViewCell.xib */; };
+		0B80B0A727989B9300687D19 /* CourseInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B0A527989B9300687D19 /* CourseInfoTableViewCell.swift */; };
+		0B80B0A827989B9300687D19 /* CourseInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0A627989B9300687D19 /* CourseInfoTableViewCell.xib */; };
+		0B80B0AB27989CCF00687D19 /* ExpandedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B80B0AA27989CCF00687D19 /* ExpandedViewController.swift */; };
+		0B80B0DB27989D7400687D19 /* IBMPlexMono-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0CC27989D7300687D19 /* IBMPlexMono-Thin.ttf */; };
+		0B80B0DC27989D7400687D19 /* IBMPlexMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0CD27989D7300687D19 /* IBMPlexMono-Bold.ttf */; };
+		0B80B0DD27989D7400687D19 /* IBMPlexMono-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0CE27989D7300687D19 /* IBMPlexMono-MediumItalic.ttf */; };
+		0B80B0DE27989D7400687D19 /* IBMPlexMono-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0CF27989D7300687D19 /* IBMPlexMono-BoldItalic.ttf */; };
+		0B80B0DF27989D7400687D19 /* IBMPlexMono-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D027989D7300687D19 /* IBMPlexMono-Medium.ttf */; };
+		0B80B0E027989D7400687D19 /* IBMPlexMono-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D127989D7300687D19 /* IBMPlexMono-ExtraLight.ttf */; };
+		0B80B0E127989D7400687D19 /* IBMPlexMono-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D227989D7300687D19 /* IBMPlexMono-ExtraLightItalic.ttf */; };
+		0B80B0E227989D7400687D19 /* IBMPlexMono-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D327989D7300687D19 /* IBMPlexMono-ThinItalic.ttf */; };
+		0B80B0E327989D7400687D19 /* IBMPlexMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D427989D7300687D19 /* IBMPlexMono-Regular.ttf */; };
+		0B80B0E427989D7400687D19 /* IBMPlexMono-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D527989D7300687D19 /* IBMPlexMono-Light.ttf */; };
+		0B80B0E527989D7400687D19 /* IBMPlexMono-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D627989D7300687D19 /* IBMPlexMono-Italic.ttf */; };
+		0B80B0E727989D7400687D19 /* IBMPlexMono-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D827989D7300687D19 /* IBMPlexMono-SemiBold.ttf */; };
+		0B80B0E827989D7400687D19 /* IBMPlexMono-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0D927989D7300687D19 /* IBMPlexMono-SemiBoldItalic.ttf */; };
+		0B80B0E927989D7400687D19 /* IBMPlexMono-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B0DA27989D7300687D19 /* IBMPlexMono-LightItalic.ttf */; };
+		0B80B11627989DDA00687D19 /* IBMPlexSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10827989DDA00687D19 /* IBMPlexSans-SemiBoldItalic.ttf */; };
+		0B80B11727989DDA00687D19 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10927989DDA00687D19 /* IBMPlexSans-Medium.ttf */; };
+		0B80B11827989DDA00687D19 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10A27989DDA00687D19 /* IBMPlexSans-SemiBold.ttf */; };
+		0B80B11927989DDA00687D19 /* IBMPlexSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10B27989DDA00687D19 /* IBMPlexSans-MediumItalic.ttf */; };
+		0B80B11A27989DDA00687D19 /* IBMPlexSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10C27989DDA00687D19 /* IBMPlexSans-LightItalic.ttf */; };
+		0B80B11B27989DDA00687D19 /* IBMPlexSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10D27989DDA00687D19 /* IBMPlexSans-ExtraLight.ttf */; };
+		0B80B11C27989DDA00687D19 /* IBMPlexSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10E27989DDA00687D19 /* IBMPlexSans-Thin.ttf */; };
+		0B80B11D27989DDA00687D19 /* IBMPlexSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B10F27989DDA00687D19 /* IBMPlexSans-ThinItalic.ttf */; };
+		0B80B11E27989DDA00687D19 /* IBMPlexSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B11027989DDA00687D19 /* IBMPlexSans-BoldItalic.ttf */; };
+		0B80B11F27989DDA00687D19 /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B11127989DDA00687D19 /* IBMPlexSans-Light.ttf */; };
+		0B80B12027989DDA00687D19 /* IBMPlexSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B11227989DDA00687D19 /* IBMPlexSans-Italic.ttf */; };
+		0B80B12127989DDA00687D19 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B11327989DDA00687D19 /* IBMPlexSans-Regular.ttf */; };
+		0B80B12227989DDA00687D19 /* IBMPlexSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B11427989DDA00687D19 /* IBMPlexSans-ExtraLightItalic.ttf */; };
+		0B80B12327989DDA00687D19 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B80B11527989DDA00687D19 /* IBMPlexSans-Bold.ttf */; };
+		7567283B5F89FBD5FB2664AB /* Pods_ADGCoureApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81D14A5438D69F484DB3166 /* Pods_ADGCoureApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B80B08227989A5200687D19 /* ADGCoureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADGCoureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B80B08527989A5200687D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B80B08727989A5200687D19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0B80B08927989A5200687D19 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
+		0B80B08C27989A5200687D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0B80B08F27989A5200687D19 /* ADGCoureApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ADGCoureApp.xcdatamodel; sourceTree = "<group>"; };
+		0B80B09127989A5300687D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0B80B09427989A5300687D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B80B09627989A5300687D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B80B0A027989AFA00687D19 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
+		0B80B0A127989AFA00687D19 /* CoursesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesTableViewCell.xib; sourceTree = "<group>"; };
+		0B80B0A527989B9300687D19 /* CourseInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoTableViewCell.swift; sourceTree = "<group>"; };
+		0B80B0A627989B9300687D19 /* CourseInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseInfoTableViewCell.xib; sourceTree = "<group>"; };
+		0B80B0AA27989CCF00687D19 /* ExpandedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedViewController.swift; sourceTree = "<group>"; };
+		0B80B0CC27989D7300687D19 /* IBMPlexMono-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Thin.ttf"; sourceTree = "<group>"; };
+		0B80B0CD27989D7300687D19 /* IBMPlexMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Bold.ttf"; sourceTree = "<group>"; };
+		0B80B0CE27989D7300687D19 /* IBMPlexMono-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0B80B0CF27989D7300687D19 /* IBMPlexMono-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0B80B0D027989D7300687D19 /* IBMPlexMono-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Medium.ttf"; sourceTree = "<group>"; };
+		0B80B0D127989D7300687D19 /* IBMPlexMono-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0B80B0D227989D7300687D19 /* IBMPlexMono-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		0B80B0D327989D7300687D19 /* IBMPlexMono-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0B80B0D427989D7300687D19 /* IBMPlexMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Regular.ttf"; sourceTree = "<group>"; };
+		0B80B0D527989D7300687D19 /* IBMPlexMono-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Light.ttf"; sourceTree = "<group>"; };
+		0B80B0D627989D7300687D19 /* IBMPlexMono-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-Italic.ttf"; sourceTree = "<group>"; };
+		0B80B0D827989D7300687D19 /* IBMPlexMono-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-SemiBold.ttf"; sourceTree = "<group>"; };
+		0B80B0D927989D7300687D19 /* IBMPlexMono-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0B80B0DA27989D7300687D19 /* IBMPlexMono-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexMono-LightItalic.ttf"; sourceTree = "<group>"; };
+		0B80B10827989DDA00687D19 /* IBMPlexSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0B80B10927989DDA00687D19 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		0B80B10A27989DDA00687D19 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		0B80B10B27989DDA00687D19 /* IBMPlexSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0B80B10C27989DDA00687D19 /* IBMPlexSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		0B80B10D27989DDA00687D19 /* IBMPlexSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0B80B10E27989DDA00687D19 /* IBMPlexSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Thin.ttf"; sourceTree = "<group>"; };
+		0B80B10F27989DDA00687D19 /* IBMPlexSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0B80B11027989DDA00687D19 /* IBMPlexSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0B80B11127989DDA00687D19 /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
+		0B80B11227989DDA00687D19 /* IBMPlexSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Italic.ttf"; sourceTree = "<group>"; };
+		0B80B11327989DDA00687D19 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		0B80B11427989DDA00687D19 /* IBMPlexSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "IBMPlexSans-ExtraLightItalic.ttf"; path = "../../IBM_Plex_Sans/IBMPlexSans-ExtraLightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		0B80B11527989DDA00687D19 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		155EDD73DB32136673766B95 /* Pods-ADGCoureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADGCoureApp.debug.xcconfig"; path = "Target Support Files/Pods-ADGCoureApp/Pods-ADGCoureApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D48977100292272C878530E7 /* Pods-ADGCoureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADGCoureApp.release.xcconfig"; path = "Target Support Files/Pods-ADGCoureApp/Pods-ADGCoureApp.release.xcconfig"; sourceTree = "<group>"; };
+		E81D14A5438D69F484DB3166 /* Pods_ADGCoureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ADGCoureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0B80B07F27989A5200687D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7567283B5F89FBD5FB2664AB /* Pods_ADGCoureApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		003654B6551467A597FB7EA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E81D14A5438D69F484DB3166 /* Pods_ADGCoureApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B55B40B5066FBD8E02CB284 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				155EDD73DB32136673766B95 /* Pods-ADGCoureApp.debug.xcconfig */,
+				D48977100292272C878530E7 /* Pods-ADGCoureApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0B80B07927989A5200687D19 = {
+			isa = PBXGroup;
+			children = (
+				0B80B08427989A5200687D19 /* ADGCoureApp */,
+				0B80B08327989A5200687D19 /* Products */,
+				0B55B40B5066FBD8E02CB284 /* Pods */,
+				003654B6551467A597FB7EA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0B80B08327989A5200687D19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B08227989A5200687D19 /* ADGCoureApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0B80B08427989A5200687D19 /* ADGCoureApp */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B09C27989A9F00687D19 /* ViewControllers */,
+				0B80B09E27989ABD00687D19 /* Utilities */,
+				0B80B0A927989BCD00687D19 /* Controllers */,
+				0B80B08B27989A5200687D19 /* Main.storyboard */,
+				0B80B09127989A5300687D19 /* Assets.xcassets */,
+				0B80B09327989A5300687D19 /* LaunchScreen.storyboard */,
+				0B80B09627989A5300687D19 /* Info.plist */,
+				0B80B08E27989A5200687D19 /* ADGCoureApp.xcdatamodeld */,
+			);
+			path = ADGCoureApp;
+			sourceTree = "<group>";
+		};
+		0B80B09C27989A9F00687D19 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B09D27989AAB00687D19 /* Nibs And Controllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0B80B09D27989AAB00687D19 /* Nibs And Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B0A427989B5D00687D19 /* ExpandedCourseViewController */,
+				0B80B09F27989AD200687D19 /* CourseViewController */,
+			);
+			path = "Nibs And Controllers";
+			sourceTree = "<group>";
+		};
+		0B80B09E27989ABD00687D19 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B10727989DDA00687D19 /* IBM_Plex_Sans */,
+				0B80B0CB27989D7300687D19 /* IBM_Plex_Mono */,
+				0B80B08527989A5200687D19 /* AppDelegate.swift */,
+				0B80B08727989A5200687D19 /* SceneDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0B80B09F27989AD200687D19 /* CourseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B0A027989AFA00687D19 /* CoursesTableViewCell.swift */,
+				0B80B0A127989AFA00687D19 /* CoursesTableViewCell.xib */,
+			);
+			path = CourseViewController;
+			sourceTree = "<group>";
+		};
+		0B80B0A427989B5D00687D19 /* ExpandedCourseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B0A527989B9300687D19 /* CourseInfoTableViewCell.swift */,
+				0B80B0A627989B9300687D19 /* CourseInfoTableViewCell.xib */,
+			);
+			path = ExpandedCourseViewController;
+			sourceTree = "<group>";
+		};
+		0B80B0A927989BCD00687D19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B08927989A5200687D19 /* CourseViewController.swift */,
+				0B80B0AA27989CCF00687D19 /* ExpandedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B80B0CB27989D7300687D19 /* IBM_Plex_Mono */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B0CC27989D7300687D19 /* IBMPlexMono-Thin.ttf */,
+				0B80B0CD27989D7300687D19 /* IBMPlexMono-Bold.ttf */,
+				0B80B0CE27989D7300687D19 /* IBMPlexMono-MediumItalic.ttf */,
+				0B80B0CF27989D7300687D19 /* IBMPlexMono-BoldItalic.ttf */,
+				0B80B0D027989D7300687D19 /* IBMPlexMono-Medium.ttf */,
+				0B80B0D127989D7300687D19 /* IBMPlexMono-ExtraLight.ttf */,
+				0B80B0D227989D7300687D19 /* IBMPlexMono-ExtraLightItalic.ttf */,
+				0B80B0D327989D7300687D19 /* IBMPlexMono-ThinItalic.ttf */,
+				0B80B0D427989D7300687D19 /* IBMPlexMono-Regular.ttf */,
+				0B80B0D527989D7300687D19 /* IBMPlexMono-Light.ttf */,
+				0B80B0D627989D7300687D19 /* IBMPlexMono-Italic.ttf */,
+				0B80B0D827989D7300687D19 /* IBMPlexMono-SemiBold.ttf */,
+				0B80B0D927989D7300687D19 /* IBMPlexMono-SemiBoldItalic.ttf */,
+				0B80B0DA27989D7300687D19 /* IBMPlexMono-LightItalic.ttf */,
+			);
+			name = IBM_Plex_Mono;
+			path = ../../IBM_Plex_Mono;
+			sourceTree = SOURCE_ROOT;
+		};
+		0B80B10727989DDA00687D19 /* IBM_Plex_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				0B80B10827989DDA00687D19 /* IBMPlexSans-SemiBoldItalic.ttf */,
+				0B80B10927989DDA00687D19 /* IBMPlexSans-Medium.ttf */,
+				0B80B10A27989DDA00687D19 /* IBMPlexSans-SemiBold.ttf */,
+				0B80B10B27989DDA00687D19 /* IBMPlexSans-MediumItalic.ttf */,
+				0B80B10C27989DDA00687D19 /* IBMPlexSans-LightItalic.ttf */,
+				0B80B10D27989DDA00687D19 /* IBMPlexSans-ExtraLight.ttf */,
+				0B80B10E27989DDA00687D19 /* IBMPlexSans-Thin.ttf */,
+				0B80B10F27989DDA00687D19 /* IBMPlexSans-ThinItalic.ttf */,
+				0B80B11027989DDA00687D19 /* IBMPlexSans-BoldItalic.ttf */,
+				0B80B11127989DDA00687D19 /* IBMPlexSans-Light.ttf */,
+				0B80B11227989DDA00687D19 /* IBMPlexSans-Italic.ttf */,
+				0B80B11327989DDA00687D19 /* IBMPlexSans-Regular.ttf */,
+				0B80B11427989DDA00687D19 /* IBMPlexSans-ExtraLightItalic.ttf */,
+				0B80B11527989DDA00687D19 /* IBMPlexSans-Bold.ttf */,
+			);
+			name = IBM_Plex_Sans;
+			path = ../../IBM_Plex_Sans;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0B80B08127989A5200687D19 /* ADGCoureApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B80B09927989A5300687D19 /* Build configuration list for PBXNativeTarget "ADGCoureApp" */;
+			buildPhases = (
+				DE3038D1E2BF2B1740E7CC16 /* [CP] Check Pods Manifest.lock */,
+				0B80B07E27989A5200687D19 /* Sources */,
+				0B80B07F27989A5200687D19 /* Frameworks */,
+				0B80B08027989A5200687D19 /* Resources */,
+				0D8EF158A0454A6F1799F591 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADGCoureApp;
+			productName = ADGCoureApp;
+			productReference = 0B80B08227989A5200687D19 /* ADGCoureApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0B80B07A27989A5200687D19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					0B80B08127989A5200687D19 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 0B80B07D27989A5200687D19 /* Build configuration list for PBXProject "ADGCoureApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0B80B07927989A5200687D19;
+			productRefGroup = 0B80B08327989A5200687D19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B80B08127989A5200687D19 /* ADGCoureApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B80B08027989A5200687D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B80B11D27989DDA00687D19 /* IBMPlexSans-ThinItalic.ttf in Resources */,
+				0B80B11827989DDA00687D19 /* IBMPlexSans-SemiBold.ttf in Resources */,
+				0B80B12227989DDA00687D19 /* IBMPlexSans-ExtraLightItalic.ttf in Resources */,
+				0B80B0A327989AFA00687D19 /* CoursesTableViewCell.xib in Resources */,
+				0B80B0E127989D7400687D19 /* IBMPlexMono-ExtraLightItalic.ttf in Resources */,
+				0B80B11E27989DDA00687D19 /* IBMPlexSans-BoldItalic.ttf in Resources */,
+				0B80B0DD27989D7400687D19 /* IBMPlexMono-MediumItalic.ttf in Resources */,
+				0B80B0DC27989D7400687D19 /* IBMPlexMono-Bold.ttf in Resources */,
+				0B80B0E927989D7400687D19 /* IBMPlexMono-LightItalic.ttf in Resources */,
+				0B80B11C27989DDA00687D19 /* IBMPlexSans-Thin.ttf in Resources */,
+				0B80B0A827989B9300687D19 /* CourseInfoTableViewCell.xib in Resources */,
+				0B80B12327989DDA00687D19 /* IBMPlexSans-Bold.ttf in Resources */,
+				0B80B11727989DDA00687D19 /* IBMPlexSans-Medium.ttf in Resources */,
+				0B80B11A27989DDA00687D19 /* IBMPlexSans-LightItalic.ttf in Resources */,
+				0B80B12127989DDA00687D19 /* IBMPlexSans-Regular.ttf in Resources */,
+				0B80B0E527989D7400687D19 /* IBMPlexMono-Italic.ttf in Resources */,
+				0B80B0E827989D7400687D19 /* IBMPlexMono-SemiBoldItalic.ttf in Resources */,
+				0B80B11F27989DDA00687D19 /* IBMPlexSans-Light.ttf in Resources */,
+				0B80B11B27989DDA00687D19 /* IBMPlexSans-ExtraLight.ttf in Resources */,
+				0B80B11927989DDA00687D19 /* IBMPlexSans-MediumItalic.ttf in Resources */,
+				0B80B09527989A5300687D19 /* LaunchScreen.storyboard in Resources */,
+				0B80B0E227989D7400687D19 /* IBMPlexMono-ThinItalic.ttf in Resources */,
+				0B80B11627989DDA00687D19 /* IBMPlexSans-SemiBoldItalic.ttf in Resources */,
+				0B80B0E327989D7400687D19 /* IBMPlexMono-Regular.ttf in Resources */,
+				0B80B12027989DDA00687D19 /* IBMPlexSans-Italic.ttf in Resources */,
+				0B80B09227989A5300687D19 /* Assets.xcassets in Resources */,
+				0B80B0DF27989D7400687D19 /* IBMPlexMono-Medium.ttf in Resources */,
+				0B80B0E027989D7400687D19 /* IBMPlexMono-ExtraLight.ttf in Resources */,
+				0B80B08D27989A5200687D19 /* Main.storyboard in Resources */,
+				0B80B0E727989D7400687D19 /* IBMPlexMono-SemiBold.ttf in Resources */,
+				0B80B0DE27989D7400687D19 /* IBMPlexMono-BoldItalic.ttf in Resources */,
+				0B80B0E427989D7400687D19 /* IBMPlexMono-Light.ttf in Resources */,
+				0B80B0DB27989D7400687D19 /* IBMPlexMono-Thin.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D8EF158A0454A6F1799F591 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADGCoureApp/Pods-ADGCoureApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ADGCoureApp/Pods-ADGCoureApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ADGCoureApp/Pods-ADGCoureApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3038D1E2BF2B1740E7CC16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ADGCoureApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B80B07E27989A5200687D19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B80B0A727989B9300687D19 /* CourseInfoTableViewCell.swift in Sources */,
+				0B80B08A27989A5200687D19 /* CourseViewController.swift in Sources */,
+				0B80B08627989A5200687D19 /* AppDelegate.swift in Sources */,
+				0B80B08827989A5200687D19 /* SceneDelegate.swift in Sources */,
+				0B80B0A227989AFA00687D19 /* CoursesTableViewCell.swift in Sources */,
+				0B80B0AB27989CCF00687D19 /* ExpandedViewController.swift in Sources */,
+				0B80B09027989A5200687D19 /* ADGCoureApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0B80B08B27989A5200687D19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B80B08C27989A5200687D19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B80B09327989A5300687D19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B80B09427989A5300687D19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0B80B09727989A5300687D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0B80B09827989A5300687D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0B80B09A27989A5300687D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155EDD73DB32136673766B95 /* Pods-ADGCoureApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADGCoureApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaibhavshah.ADGCoureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B80B09B27989A5300687D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D48977100292272C878530E7 /* Pods-ADGCoureApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADGCoureApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vaibhavshah.ADGCoureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B80B07D27989A5200687D19 /* Build configuration list for PBXProject "ADGCoureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B80B09727989A5300687D19 /* Debug */,
+				0B80B09827989A5300687D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B80B09927989A5300687D19 /* Build configuration list for PBXNativeTarget "ADGCoureApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B80B09A27989A5300687D19 /* Debug */,
+				0B80B09B27989A5300687D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0B80B08E27989A5200687D19 /* ADGCoureApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0B80B08F27989A5200687D19 /* ADGCoureApp.xcdatamodel */,
+			);
+			currentVersion = 0B80B08F27989A5200687D19 /* ADGCoureApp.xcdatamodel */;
+			path = ADGCoureApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0B80B07A27989A5200687D19 /* Project object */;
+}

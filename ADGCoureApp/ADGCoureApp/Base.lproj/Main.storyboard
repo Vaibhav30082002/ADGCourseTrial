@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LUV-VH-sgj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexMono-Regular.ttf">
+            <string>IBMPlexMono-Regular</string>
+        </array>
+        <array key="IBMPlexSans-Medium.ttf">
+            <string>IBMPlexSans-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zgZ-ng-K9C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LUV-VH-sgj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OC5-7P-v3D">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.37254901959999998" green="0.80784313730000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" name="buttonGreen"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-Regular" family="IBM Plex Sans" pointSize="34"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="IBMPlexSans-SemiBold" family="IBM Plex Sans" pointSize="34"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RGy-Hl-Z8a" kind="relationship" relationship="rootViewController" id="K6O-lD-qhq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rCX-cP-eRr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="92.410714285714278"/>
+        </scene>
+        <!--Courses-->
+        <scene sceneID="90M-XW-Dow">
+            <objects>
+                <viewController id="RGy-Hl-Z8a" customClass="CourseViewController" customModule="ADGCoureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t7T-Gj-Xcd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar clipsSubviews="YES" contentMode="redraw" placeholderIntrinsicWidth="382" placeholderIntrinsicHeight="48" placeholder="Search Course." translatesAutoresizingMaskIntoConstraints="NO" id="NR1-QY-Ve2">
+                                <rect key="frame" x="16" y="155" width="382" height="51"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="AlF-nd-SNB"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QFj-zi-VAG" userLabel="CourseTableView">
+                                <rect key="frame" x="16" y="211" width="382" height="636"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" name="customTintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="636" id="CRB-3s-tfR"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wU1-tJ-SD9"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QFj-zi-VAG" firstAttribute="top" secondItem="NR1-QY-Ve2" secondAttribute="bottom" constant="5" id="63t-ff-1ag"/>
+                            <constraint firstItem="wU1-tJ-SD9" firstAttribute="trailing" secondItem="NR1-QY-Ve2" secondAttribute="trailing" constant="16" id="Hdt-JE-bRt"/>
+                            <constraint firstItem="QFj-zi-VAG" firstAttribute="leading" secondItem="wU1-tJ-SD9" secondAttribute="leading" constant="16" id="LZl-7K-bWf"/>
+                            <constraint firstItem="wU1-tJ-SD9" firstAttribute="trailing" secondItem="QFj-zi-VAG" secondAttribute="trailing" constant="16" id="Xui-WV-4Ks"/>
+                            <constraint firstItem="NR1-QY-Ve2" firstAttribute="top" secondItem="wU1-tJ-SD9" secondAttribute="top" constant="15" id="eNh-Yv-VNB"/>
+                            <constraint firstItem="NR1-QY-Ve2" firstAttribute="leading" secondItem="wU1-tJ-SD9" secondAttribute="leading" constant="16" id="ejW-gJ-t8c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Courses" id="kFw-B3-4fL">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Settings" width="50" id="4gA-tD-xv2">
+                            <color key="tintColor" red="0.37254901959999998" green="0.80784313730000001" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="courseSearch" destination="NR1-QY-Ve2" id="w3v-06-fUk"/>
+                        <outlet property="courseTableView" destination="QFj-zi-VAG" id="TcW-AW-Joi"/>
+                        <segue destination="3Q5-Xe-20c" kind="push" identifier="toExpandCourse" id="Wn1-qc-J1W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KLL-sV-TfD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="76"/>
+        </scene>
+        <!--Expanded View Controller-->
+        <scene sceneID="qMW-sZ-qDm">
+            <objects>
+                <viewController id="3Q5-Xe-20c" customClass="ExpandedViewController" customModule="ADGCoureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NOe-ch-cU7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Structure and Algorithm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3Y-Ox-5Rq">
+                                <rect key="frame" x="16" y="147" width="234.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="C1B-gI-pZg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSans-Medium" family="IBM Plex Sans" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQV-vZ-TVV">
+                                <rect key="frame" x="16" y="175" width="43.5" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="6mk-Xl-pPe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VZI-Kr-WCq" userLabel="VeritcalStack">
+                                <rect key="frame" x="16" y="238" width="382" height="88"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ynv-mr-2KG">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5TI-oh-8Vs">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="44"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Atf-0f-XWc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="55" verticalHuggingPriority="43" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kM5-OW-Ddd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="kM5-OW-Ddd" secondAttribute="bottom" id="5gi-ve-fTR"/>
+                                                            <constraint firstItem="kM5-OW-Ddd" firstAttribute="top" secondItem="Atf-0f-XWc" secondAttribute="top" id="6Zx-PQ-y4g"/>
+                                                            <constraint firstItem="kM5-OW-Ddd" firstAttribute="leading" secondItem="Atf-0f-XWc" secondAttribute="leading" id="7PV-XO-uVe"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kM5-OW-Ddd" secondAttribute="trailing" id="s2q-6x-Ja7"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBp-hB-Tf3">
+                                                        <rect key="frame" x="48" y="0.0" width="47.5" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="36.5" translatesAutoresizingMaskIntoConstraints="NO" id="8gQ-1E-NrA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="8gQ-1E-NrA" secondAttribute="bottom" id="BkY-sW-hFh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8gQ-1E-NrA" secondAttribute="trailing" id="IIX-WV-fTc"/>
+                                                            <constraint firstItem="8gQ-1E-NrA" firstAttribute="top" secondItem="qBp-hB-Tf3" secondAttribute="top" id="YQ6-Bf-NbD"/>
+                                                            <constraint firstItem="8gQ-1E-NrA" firstAttribute="leading" secondItem="qBp-hB-Tf3" secondAttribute="leading" id="xuo-rK-xZx"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U12-mR-15b">
+                                                        <rect key="frame" x="95.5" y="0.0" width="48" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hI-op-OaL">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="9hI-op-OaL" secondAttribute="bottom" id="HRv-1V-4ut"/>
+                                                            <constraint firstItem="9hI-op-OaL" firstAttribute="top" secondItem="U12-mR-15b" secondAttribute="top" id="WGw-ld-StS"/>
+                                                            <constraint firstItem="9hI-op-OaL" firstAttribute="leading" secondItem="U12-mR-15b" secondAttribute="leading" id="hhJ-LR-b1N"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9hI-op-OaL" secondAttribute="trailing" id="qSv-AC-xKi"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojr-AG-lgf">
+                                                        <rect key="frame" x="143.5" y="0.0" width="47.5" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lg-sn-MC9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="2Lg-sn-MC9" firstAttribute="leading" secondItem="Ojr-AG-lgf" secondAttribute="leading" id="PmE-l9-ZL1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2Lg-sn-MC9" secondAttribute="trailing" id="eCC-G6-6et"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2Lg-sn-MC9" secondAttribute="bottom" id="tWs-Jd-TZ0"/>
+                                                            <constraint firstItem="2Lg-sn-MC9" firstAttribute="top" secondItem="Ojr-AG-lgf" secondAttribute="top" id="xI0-qw-3l4"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hV-ID-WNR">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="55" verticalHuggingPriority="43" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGO-Be-BGv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="44"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="dGO-Be-BGv" secondAttribute="trailing" id="APk-As-fLR"/>
+                                                    <constraint firstItem="dGO-Be-BGv" firstAttribute="leading" secondItem="1hV-ID-WNR" secondAttribute="leading" id="Vmu-Mb-k2n"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dGO-Be-BGv" secondAttribute="bottom" id="Y0d-vc-PXD"/>
+                                                    <constraint firstItem="dGO-Be-BGv" firstAttribute="top" secondItem="1hV-ID-WNR" secondAttribute="top" id="t9B-cU-Iep"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1.2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zzM-WN-lBY">
+                                        <rect key="frame" x="0.0" y="44" width="382" height="44"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KJD-ih-fQm">
+                                                <rect key="frame" x="0.0" y="0.0" width="191" height="44"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WM-NP-VdX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="48" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="55" verticalHuggingPriority="43" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sax-gR-qBe">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="sax-gR-qBe" secondAttribute="bottom" id="MSE-rH-l7i"/>
+                                                            <constraint firstItem="sax-gR-qBe" firstAttribute="leading" secondItem="2WM-NP-VdX" secondAttribute="leading" id="RWv-2k-npJ"/>
+                                                            <constraint firstItem="sax-gR-qBe" firstAttribute="top" secondItem="2WM-NP-VdX" secondAttribute="top" id="aiF-kK-Xlv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="sax-gR-qBe" secondAttribute="trailing" id="fst-ii-7x7"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zi7-0k-AC1">
+                                                        <rect key="frame" x="48" y="0.0" width="47.5" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="36.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-l7-agB">
+                                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="Ide-l7-agB" firstAttribute="leading" secondItem="zi7-0k-AC1" secondAttribute="leading" id="R4T-MM-wOy"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Ide-l7-agB" secondAttribute="bottom" id="hGC-2r-6az"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ide-l7-agB" secondAttribute="trailing" id="hTz-A9-btR"/>
+                                                            <constraint firstItem="Ide-l7-agB" firstAttribute="top" secondItem="zi7-0k-AC1" secondAttribute="top" id="z5P-QC-BjS"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YK-Vf-zSd">
+                                                        <rect key="frame" x="95.5" y="0.0" width="48" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM6-qQ-OfV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="48" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="JM6-qQ-OfV" firstAttribute="top" secondItem="8YK-Vf-zSd" secondAttribute="top" id="GqC-Zb-i75"/>
+                                                            <constraint firstAttribute="bottom" secondItem="JM6-qQ-OfV" secondAttribute="bottom" id="MzJ-WQ-8Qa"/>
+                                                            <constraint firstItem="JM6-qQ-OfV" firstAttribute="leading" secondItem="8YK-Vf-zSd" secondAttribute="leading" id="dxB-qi-clL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="JM6-qQ-OfV" secondAttribute="trailing" id="iNI-29-H3i"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7Q-1h-vr1">
+                                                        <rect key="frame" x="143.5" y="0.0" width="47.5" height="44"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XA-nr-WLM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="44"/>
+                                                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="2XA-nr-WLM" firstAttribute="top" secondItem="b7Q-1h-vr1" secondAttribute="top" id="Kxd-Iw-0wQ"/>
+                                                            <constraint firstItem="2XA-nr-WLM" firstAttribute="leading" secondItem="b7Q-1h-vr1" secondAttribute="leading" id="T7C-qZ-jk5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2XA-nr-WLM" secondAttribute="trailing" id="jds-mH-znw"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2XA-nr-WLM" secondAttribute="bottom" id="lqp-nm-5Y8"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1.2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23Q-Ba-ix4">
+                                                <rect key="frame" x="191" y="0.0" width="191" height="44"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="55" verticalHuggingPriority="43" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-DJ-IWC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="191" height="44"/>
+                                                        <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="6eN-DJ-IWC" secondAttribute="trailing" id="KpT-t0-8Xu"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6eN-DJ-IWC" secondAttribute="bottom" id="bvc-Qk-PuE"/>
+                                                    <constraint firstItem="6eN-DJ-IWC" firstAttribute="top" secondItem="23Q-Ba-ix4" secondAttribute="top" id="kNl-hM-0Wr"/>
+                                                    <constraint firstItem="6eN-DJ-IWC" firstAttribute="leading" secondItem="23Q-Ba-ix4" secondAttribute="leading" id="mSB-Eo-KK4"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1.2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="-1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="5Tu-7c-01u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Embeded: Theory + Lab + Project" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Biu-rj-RRa">
+                                <rect key="frame" x="16" y="336" width="223.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ols-oV-Bw8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexMono-Regular" family="IBM Plex Mono" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a0e-ah-JQX" userLabel="CourseInfoTableView">
+                                <rect key="frame" x="0.0" y="438" width="414" height="424"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLP-I1-Z8w" userLabel="SegmentView">
+                                <rect key="frame" x="0.0" y="397" width="414" height="26"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="JH7-HV-r9n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dsr-yu-4JV"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dQV-vZ-TVV" firstAttribute="top" secondItem="i3Y-Ox-5Rq" secondAttribute="bottom" constant="5" id="7Wi-UR-r5x"/>
+                            <constraint firstItem="Biu-rj-RRa" firstAttribute="leading" secondItem="Dsr-yu-4JV" secondAttribute="leading" constant="16" id="8Eu-HC-I40"/>
+                            <constraint firstItem="a0e-ah-JQX" firstAttribute="top" secondItem="FLP-I1-Z8w" secondAttribute="bottom" constant="15" id="8k7-d7-xvC"/>
+                            <constraint firstItem="i3Y-Ox-5Rq" firstAttribute="leading" secondItem="Dsr-yu-4JV" secondAttribute="leading" constant="16" id="MWe-tO-eQK"/>
+                            <constraint firstItem="VZI-Kr-WCq" firstAttribute="top" secondItem="dQV-vZ-TVV" secondAttribute="bottom" constant="40" id="NfE-kY-ykU"/>
+                            <constraint firstItem="Biu-rj-RRa" firstAttribute="top" secondItem="VZI-Kr-WCq" secondAttribute="bottom" constant="10" id="QhT-nG-h8E"/>
+                            <constraint firstItem="Dsr-yu-4JV" firstAttribute="bottom" secondItem="a0e-ah-JQX" secondAttribute="bottom" id="Stk-oJ-mcE"/>
+                            <constraint firstItem="FLP-I1-Z8w" firstAttribute="leading" secondItem="Dsr-yu-4JV" secondAttribute="leading" id="YSP-Up-4Me"/>
+                            <constraint firstItem="FLP-I1-Z8w" firstAttribute="top" secondItem="Biu-rj-RRa" secondAttribute="bottom" constant="40" id="ZAO-Sv-gM4"/>
+                            <constraint firstItem="Dsr-yu-4JV" firstAttribute="trailing" secondItem="a0e-ah-JQX" secondAttribute="trailing" id="h5S-32-35r"/>
+                            <constraint firstItem="i3Y-Ox-5Rq" firstAttribute="top" secondItem="Dsr-yu-4JV" secondAttribute="top" constant="7" id="hD1-pa-nSF"/>
+                            <constraint firstItem="FLP-I1-Z8w" firstAttribute="trailing" secondItem="Dsr-yu-4JV" secondAttribute="trailing" id="keH-IG-e7U"/>
+                            <constraint firstItem="Dsr-yu-4JV" firstAttribute="trailing" secondItem="VZI-Kr-WCq" secondAttribute="trailing" constant="16" id="nVC-KB-BtM"/>
+                            <constraint firstItem="dQV-vZ-TVV" firstAttribute="leading" secondItem="Dsr-yu-4JV" secondAttribute="leading" constant="16" id="q3E-YQ-eKG"/>
+                            <constraint firstItem="VZI-Kr-WCq" firstAttribute="leading" secondItem="Dsr-yu-4JV" secondAttribute="leading" constant="16" id="qzD-O2-4DO"/>
+                            <constraint firstItem="a0e-ah-JQX" firstAttribute="leading" secondItem="Dsr-yu-4JV" secondAttribute="leading" id="uW9-tK-mvV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ctf-nr-nXL"/>
+                    <connections>
+                        <outlet property="courseCode" destination="dQV-vZ-TVV" id="OwU-Ti-K85"/>
+                        <outlet property="courseInfoTableView" destination="a0e-ah-JQX" id="ObY-5g-Kpg"/>
+                        <outlet property="courseLongLabel" destination="i3Y-Ox-5Rq" id="Rag-hR-e4f"/>
+                        <outlet property="embeddedInfo" destination="Biu-rj-RRa" id="AIs-FN-PCC"/>
+                        <outlet property="segmentView" destination="FLP-I1-Z8w" id="JrK-u1-q7Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h2h-CP-8m0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2250.7246376811595" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Settings" width="29" height="30"/>
+        <namedColor name="buttonGreen">
+            <color red="0.37299999594688416" green="0.80800002813339233" blue="0.60000002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="customTintColor">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
